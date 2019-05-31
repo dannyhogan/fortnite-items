@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'fortnite';
+    src: URL("../assets/fonts/fortnite.otf");
+}
+
+h1 {
+    font-family: fortnite;
+    font-size: 3em;
+}
