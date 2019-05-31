@@ -3,7 +3,22 @@
     src: URL("../assets/fonts/fortnite.otf");
 }
 
-h1 {
-    font-family: fortnite;
-    font-size: 3em;
+#root, #root div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    background-image: URL("../assets/fortnite-background.png");
+    background-size: cover;
+    position: relative;
 }
