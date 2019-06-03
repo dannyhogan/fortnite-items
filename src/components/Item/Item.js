@@ -9,6 +9,7 @@ class Item extends Component {
         
         item.addEventListener('click', () => {
             onClick(itemData);
+            console.log(itemData);
         });
 
         return item;
@@ -18,10 +19,10 @@ class Item extends Component {
         const itemData = this.props.itemData;
 
         return /*html*/`
-            <li class="item">
-                <img src="${itemData.item.images.background}">
+            <li class="item ${itemData.item.rarity}">
+                <img src="${itemData.item.images.icon}">
                 <h2>${itemData.item.name}</h2>
-                <p>${itemData.item.type}</p>
+                <p>${itemData.item.rarity} ${itemData.item.type}</p>
             </li>
         `;
     }
