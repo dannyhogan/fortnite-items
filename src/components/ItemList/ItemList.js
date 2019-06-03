@@ -6,10 +6,12 @@ class ItemList extends Component {
     render() {
         const list = this.renderDOM();
 
-        const items = this.props.items;
+        const items = this.props.data;
+        const onClick = this.props.onClick;
 
-        items.forEach(item => {
-            const listItem = new Item({ item });
+        items.forEach(itemData => {
+            const listItem = new Item({ itemData, onClick });
+
             list.appendChild(listItem.render());
         });
 
