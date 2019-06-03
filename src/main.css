@@ -5,20 +5,20 @@
 
 #root, #root div {
     height: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 body {
+    font-family: fortnite;
     height: 100vh;
     padding: 0;
     margin: 0;
+    background-image: URL("../assets/fortnite-background.png");
+    background-size: cover;
+    background-repeat: none;
 }
 
 main {
-    height: 100%;
-    width: 100vw;
-    background-image: URL("../assets/fortnite-background.png");
-    background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
+

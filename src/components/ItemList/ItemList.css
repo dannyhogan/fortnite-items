@@ -1,0 +1,12 @@
+#item-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    width: 75vw;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: rgba(245, 245, 245, 0.247);
+    overflow: scroll;
+}
