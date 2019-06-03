@@ -3,7 +3,6 @@ import Header from '../Header/Header.js';
 import ItemList from '../ItemList/ItemList.js';
 import ItemModal from '../ItemModal/ItemModal.js';
 import api from '../../services/fortnite-api.js';
-// import items from '../../../test/items.js';
 
 class App extends Component {
 
