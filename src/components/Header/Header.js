@@ -5,7 +5,7 @@ class Header extends Component {
     renderTemplate() {
         return /*html*/`
             <header>
-                <h1>Fornite Item API</h1>
+                <h1>FORTNITE Items</h1>
                 <h3>View your favorite items from in-game!</h3>
             </header>
         `;
