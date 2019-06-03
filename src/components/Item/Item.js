@@ -1,16 +1,30 @@
 import Component from '../Component.js';
 
-class NewComponent extends Component {
+class Item extends Component {
+    
+    render() {
+        const item = this.renderDOM();
+        const itemData = this.props.itemData;
+        const onClick = this.props.onClick;
+        
+        item.addEventListener('click', () => {
+            onClick(itemData);
+        });
+
+        return item;
+    }
 
     renderTemplate() {
-        const item = this.props.item;
+        const itemData = this.props.itemData;
 
         return /*html*/`
-            <li id="item">
-                <img src="${item.item.images.information}">
+            <li class="item">
+                <img src="${itemData.item.images.background}">
+                <h2>${itemData.item.name}</h2>
+                <p>${itemData.item.type}</p>
             </li>
         `;
     }
 }
 
-export default NewComponent;
+export default Item;
