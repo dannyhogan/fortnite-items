@@ -1,12 +1,17 @@
-import QUERY from '../QUERY.js';
-const URL = '';
+// import QUERY from '../QUERY.js';
+const URL = 'https://fortnite-api.theapinetwork.com/store/get';
 
 const api = {
-    getItems(queryProps) {        
-        const query = QUERY.stringify(queryProps);
-        const url = `${URL}?${query}`;
-
-        return fetch(url)
+    getItems() {        
+        // const query = QUERY.stringify();
+        const url = `${URL}`;
+        return fetch(url, {
+            method: 'get',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': '0ee82d8f772888a797e2543cca6edd15'
+            }
+        })
             .then(response => response.json());
     }
 };
